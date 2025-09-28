@@ -311,7 +311,7 @@ class DataSet implements DumpableInterface, \ArrayAccess, \Countable, \Iterator
         }
 
         // Add this object to the dumped stack.
-        $dumped->attach($this);
+        $dumped->offsetSet($this);
 
         $objects = [];
 
